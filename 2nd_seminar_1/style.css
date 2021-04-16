@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #126e82; 
+  }
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: #d8e3e7;
+}
+
+/* title */
+.date {
+  width: 80%;
+  margin: auto;
+  padding-top: 150px;
+  font-size: 50px;
+}
+
+.date > span {
+  color: #132c33; 
+}
+
+/* clock-calendar-weather  */
+.clock-calendar-weather {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 130px;
+  flex-direction: row;
+  justify-content: space-around;
+  justify-items:flex-start;
+}
+
+.clock-calendar-weather > div  {
+  width: 326px;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.clock, .weather {
+  width: 33.33%;
+}
+
+/* clock */
+.clock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.analog_clock {
+  margin: 20px 0px 20px 0px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: #f8f5f1;
+}
+
+.analog_hour,
+.analog_minute,
+.analog_second {
+  position: relative;
+  height: 3px; 
+  border-radius: 1px;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+}
+
+.analog_hour {
+  z-index: 2;
+  width: 60px;
+  top: 100px;
+  left: 40px;
+  background-color: skyblue;
+}
+
+.analog_minute {
+  z-index: 1;
+  width: 90px;
+  top: 98px;
+  left: 10px;
+  background-color: skyblue;
+}
+
+.analog_second {
+  z-index: 3;
+  width: 90px;
+  top: 95px;
+  left: 10px;
+  background-color: #126e82;
+}
+
+.digital {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60px;
+}
+
+.digital_clock {
+  height: 60px;
+  margin: 0;
+  font-size: 30px;
+}
+
+.digital_button {
+  width: 60px;
+  font-size: 15px;
+  background-color: #f8f5f1;
+  border: none;
+  border-radius: 3px;
+}
+
+.digital_button:hover { /* 버튼 위로 마우스를 가져오면 변화하는 기능을 추가합니다 */
+  cursor: pointer; /* 커서를 포인터로 바꿉니다 */
+  background-color: #51c4d3;
+}
+
+.digital_button:focus { /* AM/PM 버튼을 누르면 생기는 테두리를 제거합니다*/
+  outline: none;
+}
+
+
+/* weather */
+.weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+  position: relative;
+  top: -20px;
+}
+
+.weather_data {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.weather_icon > img {
+  width: 50%;
+  position: relative;
+  z-index: -3;
+}
+
+/* calendar */
+.calendar {
+  box-sizing: border-box;
+  width: 326px;
+  height: 260px;
+  background-color: #f8f5f1;
+  border-radius: 10px;
+}
+
+.calendar_header {
+  display: inline-block;
+  margin: auto;
+  width: 326px;
+  height: 60px;
+  background-color: #126e82;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  font-size: 25px;
+  color: #f8f5f1;
+  line-height: 60px;
+}
+
+.calendar_weekday, .calendar_date > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.calendar_weekday {
+  margin: 0;
+  background-color: #51c4d3;
+  font-weight: bold;
+  line-height: 40px;
+  width: 326px;
+  height: 40px;
+}
+
+.calendar_weekday > div {
+  width: 46.6px;
+  font-size: 14px;
+}
+
+.calendar_date {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.calendar_date > div > div {
+  flex: 0 0 46.6px;
+  height: 33px;
+  border-radius: 3px;
+  font-weight: bold;
+  line-height: 30px;
+}
