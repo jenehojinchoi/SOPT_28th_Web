@@ -1,0 +1,12 @@
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+## config.js
+config.js
+
+# DS_Store
+*.DS_Store

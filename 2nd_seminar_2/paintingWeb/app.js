@@ -1,9 +1,14 @@
-const canvas = document.getElementById('jsCanvas');
-const ctx = canvas.getContext('2d');
-const colors = document.getElementsByClassName('jsColor');
-const range = document.getElementById('jsRange');
-const mode = document.getElementById('jsMode');
-const saveBtn = document.getElementById('jsSave');
+const canvas = document.getElementById("jsCanvas");
+const ctx = canvas.getContext("2d");
+const colors = document.getElementsByClassName("jsColor");
+const range = document.getElementById("jsRange");
+const mode = document.getElementById("jsMode");
+const saveYesBtn = document.getElementById("jsSaveYes");
+const saveBtn = document.getElementById("jsSave");
+const modal = document.querySelector(".modal");
+const overlay = modal.querySelector(".modal__overlay");
+const closeBtn = modal.querySelector("button");
+const saveNoBtn = document.getElementById("jsSaveNo");
 
 const INITIAL_COLOR = "black";
 
@@ -32,11 +37,9 @@ function onMouseMove(event) {
     const x = event.offsetX;
     const y = event.offsetY;
     if (!painting){
-        console.log('Creating path in ', x, y);
         ctx.beginPath();
         ctx.moveTo(x, y);
     } else {
-        console.log('Creating line ', x, y);
         ctx.lineTo(x, y);
         ctx.stroke();
     }
@@ -104,6 +107,17 @@ if (mode) {
     mode.addEventListener("click", handleModeClick)
 }
 
-if (saveBtn) {
-    saveBtn.addEventListener("click", handleSaveClick)
+const openModal = () => {
+    console.log('MODAL OPENED?')
+    modal.classList.remove("hidden")
 }
+
+const closeModal = () => {
+    modal.classList.add("hidden")
+}
+
+overlay.addEventListener("click", closeModal);
+closeBtn.addEventListener("click", closeModal);
+saveNoBtn.addEventListener("click", closeModal);
+saveBtn.addEventListener("click", openModal);
+saveYesBtn.addEventListener("click", handleSaveClick)

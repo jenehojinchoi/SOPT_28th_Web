@@ -9,6 +9,14 @@
     </head>
     <body>
         <canvas id="jsCanvas" class="canvas"></canvas>
+        <div class="modal hidden">
+            <div class="modal__overlay"></div>
+            <div class="modal__content">
+                <div>Are you really going to save this image?</div>
+                <button class = "save_yes" id="jsSaveYes">Yes</button>
+                <button class = "save_no" id="jsSaveNo">No</button>
+            </div>     
+        </div>
         <div class='controls'>
             <div class="controls__range">
                 <input type="range" id="jsRange" 
@@ -34,5 +42,6 @@
             </div>
         </div>
         <script src="app.js"></script>
+        <script src="modal.js"></script>
     </body>
 </html>

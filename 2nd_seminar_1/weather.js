@@ -1,4 +1,4 @@
-const API_key = 'd5aa0f4d46e15cc45b1001c5aa04328f';
+const API_key = config.API_key;
 
 const weatherIcon = document.querySelector('.weather_icon'), 
     weatherData = document.querySelector('.weather_data');
