@@ -1,6 +1,7 @@
 import React from 'react';
+import './SearchBar.css';
 
-const SearchBar = ({ getUser}) => {
+const SearchBar = ({ getUser }) => {
   const [userName, setUserName] = React.useState("");
   
   const changeHandler = (event) => {
@@ -14,12 +15,17 @@ const SearchBar = ({ getUser}) => {
   }
 
   return (
-    <>
+    <div className='searchBarWrapper'>
       <form onSubmit={submitHandler}>
-      <input type="text" value={userName} onChange={changeHandler} placeholder='Enter github ID'></input>
+      <input 
+        type="text" 
+        value={userName} 
+        onChange={changeHandler} 
+        placeholder='Enter Github ID'
+        className='inputBox'
+      ></input>
       </form>
-    </>
-      
+    </div>   
   );
 };
 

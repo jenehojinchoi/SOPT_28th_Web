@@ -8,7 +8,6 @@ const getUserData = async (name) => {
   console.log(err);
   return null;
   }
-    
 }
 
 export default getUserData;

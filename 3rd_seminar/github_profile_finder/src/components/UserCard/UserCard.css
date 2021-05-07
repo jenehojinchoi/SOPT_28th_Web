@@ -1,0 +1,46 @@
+.userCardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profileImage {
+  width: 200px;
+  border-radius: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Info {
+  margin: 20px 0px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+div[class^='user'] {
+  margin: 6px 0px;
+}
+
+.userName {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.userfollowInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.followers, .following {
+  margin: 20px;
+  padding: 6px;
+  border: 10px black;
+  border-radius: 20px;
+  background-color: #e4fbff;
+  text-align: center;
+  width: 100px;
+  height: 70px;
+  line-height: 200%;
+  font-size: 18px;
+}
