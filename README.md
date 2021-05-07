@@ -1,8 +1,9 @@
 # ✨ SOPT 28th Web
 
-# 3rd Seminar 
-<!-- # 2nd Seminar Assignments
+# 2nd Seminar Assignment: 
 - Practicing CSS3, HTML5, and Vanilla JS
+## Clock, Calendar, Weather App
+## Painting Web 
 
-###  -->
-### Github Profile Finder
+# 3rd Seminar Assignment:  
+## Github Profile Finder

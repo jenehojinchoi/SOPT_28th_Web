@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = 'UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Clock Calendar Weather App</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="date"></div>
+        <div class="clock-calendar-weather">
+            <div class="clock">
+                <div class="analog">
+                    <div class="analog_clock">
+                        <div class="analog_hour"></div>
+                        <div class="analog_minute"></div>
+                        <div class="analog_second"></div>
+                    </div>
+                </div>
+                <div class="digital">
+                    <div class="digital_clock"></div>
+                    <button class="digital_button">AM/PM</button>
+                </div>
+            </div>
+            <div class="calendar">
+                <div class="calendar_header"></div>
+                <div class="calendar_weekday"></div>
+                <div class="calendar_date"></div>
+              </div>
+            <div class="weather">
+                <div class="weather_icon"></div>
+                <div class="weather_data"></div>
+            </div>
+        </div>
+        <script defer src="config.js"></script>
+        <script defer src="clock.js"></script>
+        <script defer src="calendar.js"></script>
+        <script defer src="weather.js"></script>
+    </body>
+</html>
