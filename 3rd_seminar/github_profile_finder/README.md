@@ -1,4 +1,5 @@
 # ✨ SOPT 28th Web
 
 ## Github Profile Finder
-Demo
+
+![Demo](./githubProfileFinder.gif)
