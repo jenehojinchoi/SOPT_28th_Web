@@ -56,7 +56,7 @@ const CalendarWrap = Styled.div`
 `;
 
 const Calendar = ({ currYear, setCurrYear, currMonth, setCurrMonth }) => {
-  const monthList = Array.from({length: 12}, (x, i) => i);;
+  const monthList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
   const leftButton = useRef();
   const rightButton = useRef();
 
